@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anwar Cahaya Batik – Batik Asli Sragen, Elegan &amp; Berkelas</title>
     <meta name="description" content="Anwar Cahaya Batik menghadirkan koleksi batik asli Sragen premium – kemeja pria, blus wanita, dan kain batik berkualitas tinggi. Pesan mudah via WhatsApp.">
+
+    <!-- Favicon / Icon Title Web (Bulat dengan Ring Emas) -->
+    <link rel="icon" type="image/png" href="img/favicon.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png?v=2">
+    <link rel="apple-touch-icon" href="img/favicon.png?v=2">
+
+    <!-- OpenGraph / Preview Link WhatsApp & Media Sosial -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anwar Cahaya Batik">
+    <meta property="og:title" content="Anwar Cahaya Batik – Batik Asli Sragen, Elegan &amp; Berkelas">
+    <meta property="og:description" content="Koleksi batik asli Sragen premium – kemeja pria, blus wanita, dan kain batik berkualitas tinggi dengan garansi anti luntur. Pesan mudah via WhatsApp.">
+    <meta property="og:image" content="img/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anwar Cahaya Batik – Batik Asli Sragen, Elegan &amp; Berkelas">
+    <meta name="twitter:description" content="Koleksi batik asli Sragen premium – bahan katun pilihan &amp; garansi anti luntur.">
+    <meta name="twitter:image" content="img/logo.jpg">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +43,14 @@
                 <span class="logo-text">ANWAR<span class="logo-accent">CAHAYA</span>BATIK</span>
             </a>
             <nav class="nav-links" id="navLinks">
-                <a href="#koleksi" class="active">Koleksi</a>
-                <a href="#keunggulan">Keunggulan</a>
-                <a href="#cara-belanja">Cara Belanja</a>
+                <a href="#keunggulan" class="active">Keunggulan</a>
+                <a href="#koleksi">Katalog</a>
+                <a href="#cara-belanja">Toko &amp; Sosmed</a>
                 <a href="#tentang-kami">Tentang Kami</a>
-                <a href="#testimoni">Testimoni</a>
             </nav>
             <div class="nav-action">
                 <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20ingin%20melihat%20koleksi%20batik%20terbaru." class="btn btn-green" id="nav-wa-btn" target="_blank" rel="noopener">
-                    <i class="ph ph-whatsapp-logo"></i> PESAN VIA WA
+                    <i class="ph ph-whatsapp-logo"></i> <span>PESAN VIA WA</span>
                 </a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Buka Menu">
@@ -119,29 +134,36 @@
                     <p>Temukan koleksi batik terbaik kami. Klik tombol WhatsApp di bawah setiap produk untuk langsung chat dan pesan  mudah, cepat, dan terpercaya.</p>
                 </div>
                 <div class="catalog-filters" id="catalog-filters">
-                    <button class="filter-btn active" data-filter="semua">Semua</button>
-                    <button class="filter-btn" data-filter="kemeja-pria">Kemeja Pria</button>
-                    <button class="filter-btn" data-filter="blus-wanita">Blus Wanita</button>
-                    <button class="filter-btn" data-filter="kain">Kain Batik</button>
+                    <button class="filter-btn active" data-filter="semua">Semua Koleksi</button>
+                    <button class="filter-btn" data-filter="lengan-panjang">Lengan Panjang</button>
+                    <button class="filter-btn" data-filter="lengan-pendek">Lengan Pendek</button>
                 </div>
+            </div>
+
+            <div class="mobile-swipe-hint">
+                <i class="ph ph-arrows-left-right"></i> Geser ke samping untuk melihat produk lainnya
             </div>
 
             <div class="product-grid" id="product-grid">
 
-                <!-- Produk 1: Kemeja Pria -->
-                <div class="product-card" data-category="kemeja-pria" id="produk-1">
+                <!-- Produk 1: Model 1 - Maroon Sawunggaling (Lengan Pendek) -->
+                <div class="product-card" data-category="lengan-pendek" data-front-img="img/model-1-depan.jpg" data-back-img="img/model-1-belakang.jpg" id="produk-1">
                     <div class="product-image">
-                        <img src="img/koleksi-batik.jpeg" alt="Kemeja Batik Pria Mega Mendung Navy">
+                        <img src="img/model-1-depan.jpg" alt="Kemeja Batik Pria Sawunggaling Maroon">
                         <span class="badge-tag dark">BEST SELLER</span>
-                        <span class="badge-tag gold">Kemeja Pria</span>
+                        <span class="badge-tag gold">Lengan Pendek</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
                     </div>
                     <div class="product-info">
-                        <span class="category">MOTIF MEGA MENDUNG — SIMBOL KESABARAN &amp; KETEGUHAN</span>
-                        <h3>Kemeja Batik Mega Mendung Navy</h3>
-                        <p>Motif awan mega mendung khas Sragen, dominasi warna navy &amp; putih gading yang timeless. Cocok untuk rapat dan acara formal.</p>
+                        <span class="category">MOTIF SAWUNGGALING — SIMBOL KEWIBAWAAN &amp; KARISMA</span>
+                        <h3>Kemeja Batik Sawunggaling Maroon</h3>
+                        <p>Kemeja batik lengan pendek warna maroon elegan dengan motif burung Sawunggaling putih di bagian depan &amp; punggung belakang. Potongan modern yang gagah untuk acara formal maupun kasual.</p>
                         <div class="product-specs">
                             <span><i class="ph ph-diamond"></i> Katun Premium 40s</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Cap</span>
+                            <span><i class="ph ph-paint-brush"></i> Motif Depan &amp; Belakang</span>
                             <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
                         </div>
                         <div class="price-row">
@@ -151,26 +173,35 @@
                             </div>
                             <span class="status available">Tersedia</span>
                         </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Mega%20Mendung%20Navy*%20(Kode%3A%20ACB-KP-001).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-1" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Sawunggaling%20Maroon*%20(Kode%3A%20ACB-KP-001).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-1" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Produk 2: Blus Wanita -->
-                <div class="product-card" data-category="blus-wanita" id="produk-2">
+                <!-- Produk 2: Model 2 - Biru Muda Wajik Mahkota (Lengan Panjang) -->
+                <div class="product-card" data-category="lengan-panjang" data-front-img="img/model-2-depan.jpg" data-back-img="img/model-2-belakang.jpg" id="produk-2">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=500&auto=format&fit=crop" alt="Blus Batik Wanita Bunga Pesisir">
+                        <img src="img/model-2-depan.jpg" alt="Kemeja Batik Wajik Mahkota Biru Muda">
                         <span class="badge-tag dark">NEW ARRIVAL</span>
-                        <span class="badge-tag gold">Blus Wanita</span>
+                        <span class="badge-tag gold">Lengan Panjang</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
                     </div>
                     <div class="product-info">
-                        <span class="category">MOTIF BUNGA PESISIR — KEANGGUNAN WASTRA SRAGEN</span>
-                        <h3>Blus Batik Bunga Pesisir Coral</h3>
-                        <p>Perpaduan warna coral hangat dengan motif bunga abstrak khas pesisir utara. Potongan modern yang flattering dan elegan untuk wanita aktif.</p>
+                        <span class="category">MOTIF WAJIK MAHKOTA — KESAN SEGAR &amp; BERKELAS</span>
+                        <h3>Kemeja Batik Wajik Mahkota Biru Muda</h3>
+                        <p>Perpaduan warna sky blue yang tenang dengan motif mahkota klasik dan geometris wajik abu-putih menyatu dari dada hingga punggung. Tampil rapi dan berwibawa di setiap acara resmi.</p>
                         <div class="product-specs">
-                            <span><i class="ph ph-diamond"></i> Katun Rayon Halus</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Cap</span>
+                            <span><i class="ph ph-diamond"></i> Katun Primissima</span>
+                            <span><i class="ph ph-paint-brush"></i> Full Motif Menyambung</span>
                             <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
                         </div>
                         <div class="price-row">
@@ -180,187 +211,177 @@
                             </div>
                             <span class="status available">Tersedia</span>
                         </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Blus%20Batik%20Bunga%20Pesisir%20Coral*%20(Kode%3A%20ACB-BW-001).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-2" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Wajik%20Mahkota%20Biru%20Muda*%20(Kode%3A%20ACB-KP-002).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-2" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Produk 3: Kemeja Pria -->
-                <div class="product-card" data-category="kemeja-pria" id="produk-3">
+                <!-- Produk 3: Model 3 - Hitam Monokrom Wajik Mahkota (Lengan Panjang) -->
+                <div class="product-card" data-category="lengan-panjang" data-front-img="img/model-3-depan.jpg" data-back-img="img/model-3-belakang.jpg" id="produk-3">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1617952739348-87f0a2abb4c0?q=80&w=500&auto=format&fit=crop" alt="Kemeja Batik Pria Parang Klasik">
+                        <img src="img/model-3-depan.jpg" alt="Kemeja Batik Wajik Mahkota Hitam Monokrom">
                         <span class="badge-tag dark">TERLARIS</span>
-                        <span class="badge-tag gold">Kemeja Pria</span>
+                        <span class="badge-tag gold">Lengan Panjang</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
                     </div>
                     <div class="product-info">
-                        <span class="category">MOTIF PARANG KLASIK — FILOSOFI KETEGASAN PEMIMPIN</span>
-                        <h3>Kemeja Batik Parang Klasik Coklat</h3>
-                        <p>Motif parang diagonal yang melambangkan semangat tak pernah menyerah, dalam palet warna coklat tanah &amp; emas yang hangat dan berwibawa.</p>
+                        <span class="category">MOTIF WAJIK MAHKOTA — KETEGASAN &amp; ELEGansi MONOKROM</span>
+                        <h3>Kemeja Batik Wajik Mahkota Hitam</h3>
+                        <p>Kontras tegas warna hitam pekat dengan ukiran motif mahkota &amp; geometris wajik putih bersih di bagian depan dan belakang. Pilihan favorit untuk tampil maskulin dan modern.</p>
                         <div class="product-specs">
                             <span><i class="ph ph-diamond"></i> Katun Premium 40s</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Cap Tulis</span>
+                            <span><i class="ph ph-paint-brush"></i> Motif Depan &amp; Belakang</span>
                             <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
                         </div>
                         <div class="price-row">
                             <div>
-                                <span class="old-price">Rp 345.000</span>
-                                <span class="price">Rp 265.000</span>
+                                <span class="old-price">Rp 420.000</span>
+                                <span class="price">Rp 329.000</span>
                             </div>
                             <span class="status available">Tersedia</span>
                         </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Parang%20Klasik%20Coklat*%20(Kode%3A%20ACB-KP-002).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-3" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Wajik%20Mahkota%20Hitam*%20(Kode%3A%20ACB-KP-003).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-3" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Produk 4: Kain -->
-                <div class="product-card" data-category="kain" id="produk-4">
+                <!-- Produk 4: Model 4 - Navy Wajik Mahkota Manset (Lengan Panjang) -->
+                <div class="product-card" data-category="lengan-panjang" data-front-img="img/model-4-depan.jpg" data-back-img="img/model-4-belakang.jpg" id="produk-4">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601004455850-7164962c45f9?q=80&w=500&auto=format&fit=crop" alt="Kain Batik Sukowati Sragen">
-                        <span class="badge-tag dark">KAIN PREMIUM</span>
-                        <span class="badge-tag gold">Kain Batik</span>
+                        <img src="img/model-4-depan.jpg" alt="Kemeja Batik Wajik Mahkota Navy Eksklusif">
+                        <span class="badge-tag dark">EKSKLUSIF</span>
+                        <span class="badge-tag gold">Lengan Panjang</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
                     </div>
                     <div class="product-info">
-                        <span class="category">MOTIF JLAMPRANG — WARISAN BUMI SUKOWATI SRAGEN</span>
-                        <h3>Kain Batik Jlamprang Emas Hitam</h3>
-                        <p>Motif geometris segi empat khas Sragen dengan nuansa hitam pekat dan aksen emas menawan. Cocok untuk baju formal, seragam, atau kain lilit.</p>
+                        <span class="category">MOTIF WAJIK MAHKOTA — WIBAWA BIRU SAMUDRA</span>
+                        <h3>Kemeja Batik Wajik Mahkota Navy</h3>
+                        <p>Nuansa biru dongker (navy) mewah dengan detail motif mahkota hingga ujung manset pergelangan tangan. Memberikan siluet slim-fit yang rapi untuk eksekutif muda.</p>
                         <div class="product-specs">
                             <span><i class="ph ph-diamond"></i> Katun Primissima</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Tulis</span>
-                            <span><i class="ph ph-arrows-out"></i> 2m × 1,15m</span>
-                        </div>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 580.000</span>
-                                <span class="price">Rp 449.000</span>
-                            </div>
-                            <span class="status available">Tersedia</span>
-                        </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kain%20Batik%20Jlamprang%20Emas%20Hitam*%20(Kode%3A%20ACB-KB-001).%20Boleh%20info%20ketersediaan%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-4" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Produk 5: Blus Wanita -->
-                <div class="product-card" data-category="blus-wanita" id="produk-5">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4b4aac?q=80&w=500&auto=format&fit=crop" alt="Blus Batik Wanita Kawung Modern">
-                        <span class="badge-tag dark">FAVORIT</span>
-                        <span class="badge-tag gold">Blus Wanita</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">MOTIF KAWUNG MODERN — ELEGAN &amp; PERCAYA DIRI</span>
-                        <h3>Blus Batik Kawung Modern Maroon</h3>
-                        <p>Interpretasi segar motif kawung klasik dalam warna maroon eksklusif. Potongan A-line yang flowy dan feminin, sempurna untuk meeting hingga kondangan.</p>
-                        <div class="product-specs">
-                            <span><i class="ph ph-diamond"></i> Katun Rayon Premium</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Cap</span>
+                            <span><i class="ph ph-paint-brush"></i> Detail Manset Batik</span>
                             <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
                         </div>
                         <div class="price-row">
                             <div>
-                                <span class="old-price">Rp 395.000</span>
-                                <span class="price">Rp 310.000</span>
-                            </div>
-                            <span class="status available">Tersedia</span>
-                        </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Blus%20Batik%20Kawung%20Modern%20Maroon*%20(Kode%3A%20ACB-BW-002).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-5" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Produk 6: Kain -->
-                <div class="product-card" data-category="kain" id="produk-6">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1600091166971-7f9faad6c498?q=80&w=500&auto=format&fit=crop" alt="Kain Batik Sogan Lereng">
-                        <span class="badge-tag dark">EDISI TERBATAS</span>
-                        <span class="badge-tag gold">Kain Batik</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">MOTIF SOGAN LERENG — KEINDAHAN KLASIK NUSANTARA</span>
-                        <h3>Kain Batik Sogan Lereng Eksklusif</h3>
-                        <p>Motif lereng diagonal dengan warna soga coklat hangat khas batik keraton. Pewarnaan berlapis menghasilkan gradasi warna alami yang menawan.</p>
-                        <div class="product-specs">
-                            <span><i class="ph ph-diamond"></i> Mori Primissima</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Tulis</span>
-                            <span><i class="ph ph-arrows-out"></i> 2,5m × 1,15m</span>
-                        </div>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 750.000</span>
-                                <span class="price">Rp 599.000</span>
-                            </div>
-                            <span class="status limited">Stok Terbatas</span>
-                        </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kain%20Batik%20Sogan%20Lereng%20Eksklusif*%20(Kode%3A%20ACB-KB-002).%20Boleh%20info%20ketersediaan%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-6" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Produk 7: Kemeja Pria -->
-                <div class="product-card" data-category="kemeja-pria" id="produk-7">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=500&auto=format&fit=crop" alt="Kemeja Batik Slim Fit Sido Mukti">
-                        <span class="badge-tag dark">PILIHAN MUDA</span>
-                        <span class="badge-tag gold">Kemeja Pria</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">MOTIF SIDO MUKTI — DOA KEMAKMURAN &amp; KESUKSESAN</span>
-                        <h3>Kemeja Batik Slim Fit Sido Mukti</h3>
-                        <p>Potongan slim fit modern, hadir dalam motif Sido Mukti bermakna kemakmuran. Warna hitam elegan dengan aksen emas — tampil beda di kantor atau event.</p>
-                        <div class="product-specs">
-                            <span><i class="ph ph-diamond"></i> Katun Slub Premium</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Cap Tulis</span>
-                            <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
-                        </div>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 425.000</span>
+                                <span class="old-price">Rp 435.000</span>
                                 <span class="price">Rp 339.000</span>
                             </div>
                             <span class="status available">Tersedia</span>
                         </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Slim%20Fit%20Sido%20Mukti*%20(Kode%3A%20ACB-KP-003).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-7" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Wajik%20Mahkota%20Navy*%20(Kode%3A%20ACB-KP-004).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-4" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Produk 8: Blus Wanita -->
-                <div class="product-card" data-category="blus-wanita" id="produk-8">
+                <!-- Produk 5: Model 5 - Hitam Phoenix Parang Rose (Lengan Panjang, 2 Foto) -->
+                <div class="product-card" data-category="lengan-panjang" data-front-img="img/model-5-depan.jpg" data-back-img="img/model-5-belakang.jpg" id="produk-5">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?q=80&w=500&auto=format&fit=crop" alt="Tunik Batik Truntum Emas Hitam">
-                        <span class="badge-tag dark">PREMIUM</span>
-                        <span class="badge-tag gold">Blus Wanita</span>
+                        <img src="img/model-5-depan.jpg" alt="Kemeja Batik Phoenix Parang Hitam Rose">
+                        <span class="badge-tag dark">FAVORIT</span>
+                        <span class="badge-tag gold">Lengan Panjang</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
                     </div>
                     <div class="product-info">
-                        <span class="category">MOTIF TRUNTUM — LAMBANG CINTA YANG TULUS &amp; ABADI</span>
-                        <h3>Tunik Batik Truntum Emas Hitam</h3>
-                        <p>Motif truntum simbol cinta tulus tampil memukau dalam paduan hitam malam dan aksen emas. Potongan tunik panjang yang anggun untuk kondangan hingga kerja.</p>
+                        <span class="category">MOTIF PHOENIX PARANG — HARMONI SENI &amp; KEANGGUNAN</span>
+                        <h3>Kemeja Batik Phoenix Parang Hitam Rose</h3>
+                        <p>Perpaduan artistik burung Phoenix merah muda (rose) dengan garis lereng parang putih di atas dasar hitam pekat. Sangat cocok untuk kondangan, pesta malam, dan pasangan serasi.</p>
                         <div class="product-specs">
-                            <span><i class="ph ph-diamond"></i> Katun Premium Furing</span>
-                            <span><i class="ph ph-paint-brush"></i> Batik Tulis</span>
+                            <span><i class="ph ph-diamond"></i> Katun Premium Halus</span>
+                            <span><i class="ph ph-paint-brush"></i> Motif Depan &amp; Belakang</span>
                             <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
                         </div>
                         <div class="price-row">
                             <div>
-                                <span class="old-price">Rp 550.000</span>
-                                <span class="price">Rp 429.000</span>
+                                <span class="old-price">Rp 445.000</span>
+                                <span class="price">Rp 349.000</span>
                             </div>
                             <span class="status available">Tersedia</span>
                         </div>
-                        <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Tunik%20Batik%20Truntum%20Emas%20Hitam*%20(Kode%3A%20ACB-BW-003).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-full" id="wa-produk-8" target="_blank" rel="noopener">
-                            <i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP
-                        </a>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Phoenix%20Parang%20Hitam%20Rose*%20(Kode%3A%20ACB-KP-005).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-5" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 6: Model 6 - Hitam Sekar Jagad Sogan (Lengan Panjang, 2 Foto) -->
+                <div class="product-card" data-category="lengan-panjang" data-front-img="img/model-6-depan.jpg" data-back-img="img/model-6-belakang.jpg" id="produk-6">
+                    <div class="product-image">
+                        <img src="img/model-6-depan.jpg" alt="Kemeja Batik Sekar Jagad Sogan Hitam">
+                        <span class="badge-tag dark">EDISI SPESIAL</span>
+                        <span class="badge-tag gold">Lengan Panjang</span>
+                        <div class="view-angle-switch">
+                            <button type="button" class="angle-btn active" data-angle="front">Depan</button>
+                            <button type="button" class="angle-btn" data-angle="back">Belakang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="category">MOTIF SEKAR JAGAD SOGAN — WARISAN KLASIK SRAGEN</span>
+                        <h3>Kemeja Batik Sekar Jagad Sogan Hitam</h3>
+                        <p>Sentuhan sogan coklat keemasan berpadu motif dedaunan organik putih dan detail manset bermotif senada. Menghadirkan kesan klasik keraton dalam potongan modern.</p>
+                        <div class="product-specs">
+                            <span><i class="ph ph-diamond"></i> Katun Primissima</span>
+                            <span><i class="ph ph-paint-brush"></i> Detail Manset Batik</span>
+                            <span><i class="ph ph-ruler"></i> M, L, XL, XXL</span>
+                        </div>
+                        <div class="price-row">
+                            <div>
+                                <span class="old-price">Rp 450.000</span>
+                                <span class="price">Rp 349.000</span>
+                            </div>
+                            <span class="status available">Tersedia</span>
+                        </div>
+                        <div class="product-card-actions">
+                            <button type="button" class="btn btn-detail-card">
+                                <i class="ph ph-eye"></i> Lihat Detail
+                            </button>
+                            <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20tertarik%20dengan%20*Kemeja%20Batik%20Sekar%20Jagad%20Sogan%20Hitam*%20(Kode%3A%20ACB-KP-006).%20Boleh%20info%20ukuran%20dan%20cara%20pesan%3F%20%F0%9F%99%8F" class="btn btn-green btn-wa-card" id="wa-produk-6" target="_blank" rel="noopener">
+                                <i class="ph ph-whatsapp-logo"></i> Pesan via WA
+                            </a>
+                        </div>
                     </div>
                 </div>
 
             </div><!-- end product-grid -->
+
+            <!-- Tombol Lihat Koleksi Lainnya -->
+            <div class="catalog-more-wrap" id="catalogMoreWrap">
+                <button type="button" class="btn btn-outline catalog-more-btn" id="toggleMoreProducts">
+                    <span>Lihat Koleksi Lainnya (+2 Produk)</span> <i class="ph ph-caret-down"></i>
+                </button>
+            </div>
 
             <!-- Seragam / Custom Banner -->
             <div class="custom-banner" id="custom-banner">
@@ -378,37 +399,57 @@
         </div>
     </section>
 
-    <!-- ===== CARA BELANJA ===== -->
+    <!-- ===== TOKO RESMI & MEDIA SOSIAL ===== -->
     <section class="how-to" id="cara-belanja">
         <div class="container text-center">
-            <span class="subtitle">MUDAH &amp; CEPAT</span>
-            <h2>4 Langkah Mudah Belanja via WhatsApp</h2>
-            <p class="features-desc">Tidak perlu ribet daftar akun atau masukkan kartu kredit. Cukup pilih, chat, bayar, dan terima — sesederhana itu berbelanja di Anwar Cahaya Batik.</p>
-            <div class="steps-grid">
-                <div class="step-card" id="step-1">
-                    <div class="step-number">1</div>
-                    <div class="icon-wrapper"><i class="ph ph-magnifying-glass"></i></div>
-                    <h3>Pilih Koleksi Favorit</h3>
-                    <p>Jelajahi katalog kami di website ini. Temukan motif, warna, dan model yang sesuai dengan gaya dan kebutuhan Anda.</p>
-                </div>
-                <div class="step-card" id="step-2">
-                    <div class="step-number">2</div>
-                    <div class="icon-wrapper"><i class="ph ph-whatsapp-logo"></i></div>
-                    <h3>Klik Tombol WA</h3>
-                    <p>Tekan tombol hijau "Pesan via WhatsApp". Pesan otomatis sudah terisi lengkap dengan nama produk — tinggal kirim!</p>
-                </div>
-                <div class="step-card" id="step-3">
-                    <div class="step-number">3</div>
-                    <div class="icon-wrapper"><i class="ph ph-chat-circle-dots"></i></div>
-                    <h3>Konfirmasi &amp; Bayar</h3>
-                    <p>Tim kami siap membantu konfirmasi stok, ukuran, dan opsi pengiriman. Pembayaran mudah via transfer bank atau e-wallet.</p>
-                </div>
-                <div class="step-card" id="step-4">
-                    <div class="step-number">4</div>
-                    <div class="icon-wrapper"><i class="ph ph-package"></i></div>
-                    <h3>Terima di Pintu Anda</h3>
-                    <p>Dikemas rapi dan dikirim dengan jasa pengiriman terpercaya. Gratis ongkir untuk pembelian di atas Rp 500.000 ke seluruh Indonesia!</p>
-                </div>
+            <span class="subtitle">TOKO RESMI &amp; MEDIA SOSIAL KAMI</span>
+            <h2>Belanja Mudah di Toko Resmi &amp; Sosmed Kami</h2>
+            <p class="features-desc">Selain memesan lewat website ini, Anda juga bisa berbelanja dan mengikuti update motif terbaru Anwar Cahaya Batik langsung di toko online serta media sosial resmi kami. Klik salah satu di bawah untuk langsung menuju ke sana!</p>
+            <div class="steps-grid store-grid">
+                <a href="https://shopee.co.id/" target="_blank" rel="noopener" class="step-card store-card store-shopee" id="step-1">
+                    <span class="store-badge">GRATIS ONGKIR &amp; COD</span>
+                    <div class="icon-wrapper">
+                        <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z"/>
+                        </svg>
+                    </div>
+                    <h3>Toko Shopee</h3>
+                    <p>Checkout praktis di Shopee, klaim voucher gratis ongkir, promo tanggal kembar, dan fitur bayar di tempat (COD).</p>
+                    <span class="store-cta">Kunjungi Toko Shopee <i class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="step-card store-card store-tiktok" id="step-2">
+                    <span class="store-badge">LIVE &amp; VIDEO KATALOG</span>
+                    <div class="icon-wrapper">
+                        <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.242V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002-.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.853 4.853 0 0 1-1.003-.104z"/>
+                        </svg>
+                    </div>
+                    <h3>TikTok &amp; TikTok Shop</h3>
+                    <p>Tonton review detail kain secara live, video OOTD batik, dan dapatkan harga diskon spesial saat sesi Live berlangsung.</p>
+                    <span class="store-cta">Buka TikTok Kami <i class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="step-card store-card store-ig" id="step-3">
+                    <span class="store-badge">UPDATE MOTIF BARU</span>
+                    <div class="icon-wrapper">
+                        <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </div>
+                    <h3>Instagram Resmi</h3>
+                    <p>Ikuti katalog foto terbaru, koleksi edisi terbatas, serta inspirasi padu-padan batik untuk kerja maupun acara resmi.</p>
+                    <span class="store-cta">Ikuti di Instagram <i class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <a href="https://wa.me/6287726984278?text=Halo%20Anwar%20Cahaya%20Batik%2C%20saya%20ingin%20melihat%20koleksi%20batik%20terbaru." target="_blank" rel="noopener" class="step-card store-card store-wa" id="step-4">
+                    <span class="store-badge">FAST RESPONSE</span>
+                    <div class="icon-wrapper">
+                        <svg class="brand-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.293.38 2.53 1.102 3.568l-1.171 4.279 4.385-1.151c1.002.568 2.155.867 3.329.866 3.181 0 5.768-2.587 5.768-5.766.001-3.187-2.575-5.77-5.752-5.774zm3.903 8.355c-.168.472-.979.878-1.349.933-.355.053-.811.077-1.312-.085-.303-.097-.692-.224-1.186-.436-2.083-.902-3.447-3.021-3.551-3.161-.103-.141-.845-1.125-.845-2.148 0-1.023.535-1.527.725-1.735.19-.208.414-.26.552-.26.138 0 .275.002.395.008.127.006.297-.048.463.345.168.397.575 1.403.626 1.506.051.103.086.223.017.362-.069.139-.103.226-.205.345-.102.119-.214.265-.306.356-.103.102-.211.213-.091.417.12.204.532.879 1.143 1.422.787.7 1.451.918 1.655 1.021.204.103.323.086.444-.051.121-.137.521-.607.66-.816.138-.208.275-.174.463-.103.187.07 1.191.562 1.396.664.205.103.343.155.394.24.051.085.051.498-.117.97zM12 0C5.373 0 0 5.373 0 12c0 2.118.553 4.137 1.605 5.903L.044 23.956l6.238-1.638C7.994 23.284 9.957 23.8 12 23.8c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp Admin</h3>
+                    <p>Konsultasi ukuran langsung dengan admin, tanya stok motif, atau pemesanan seragam batik kantor &amp; keluarga.</p>
+                    <span class="store-cta">Chat Admin WA <i class="ph ph-arrow-up-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
@@ -432,299 +473,19 @@
                 <p>Anwar Cahaya Batik lahir dari kecintaan mendalam terhadap kain Nusantara. Berawal dari sentra kerajinan batik di Sragen, kini kami telah melayani ribuan pelanggan di seluruh Indonesia — dari pegawai kantoran hingga para pecinta fashion muda yang ingin tampil beda dan autentik.</p>
                 <p>Kami percaya bahwa batik adalah milik semua. Karena itu, setiap koleksi kami dirancang dengan cermat — memadukan motif tradisional yang kaya filosofi dengan sentuhan desain modern, menggunakan bahan katun premium yang nyaman dipakai sepanjang hari, dan pewarna berkualitas tinggi yang <strong>terjamin tidak luntur</strong>.</p>
                 <p>Setiap lembar yang Anda beli adalah bentuk nyata dukungan kepada perajin lokal Sragen dan kelestarian budaya batik Indonesia.</p>
-                <a href="https://wa.me/6287726984278?text=Halo%2C%20saya%20ingin%20mengenal%20lebih%20jauh%20Anwar%20Cahaya%20Batik%20dan%20koleksi%20yang%20tersedia." class="link-btn" id="about-wa-btn" target="_blank" rel="noopener">
-                    CHAT LANGSUNG DENGAN KAMI <i class="ph ph-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TESTIMONI ===== -->
-    <section class="testimonials bg-neutral" id="testimoni">
-        <div class="container">
-            <div class="text-center">
-                <span class="subtitle">APA KATA MEREKA</span>
-                <h2>Dipercaya Ribuan Pelanggan Setia</h2>
-                <p class="features-desc">Ulasan jujur dari pelanggan nyata kami — dari profesional kantoran, ibu rumah tangga, hingga anak muda yang bangga tampil batik.</p>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testi-card" id="testi-1">
-                    <div class="stars">★★★★★</div>
-                    <p>"Kemeja Mega Mendung-nya bagus banget! Bahannya adem dan tidak panas sama sekali meski dipakai seharian di kantor ber-AC. Coraknya bikin saya dilirik banyak rekan saat rapat. Definitely worth it!"</p>
-                    <strong>Budi Santoso, S.E.</strong>
-                    <span>Marketing Manager — Jakarta Selatan</span>
-                </div>
-                <div class="testi-card" id="testi-2">
-                    <div class="stars">★★★★★</div>
-                    <p>"Pesan via WhatsApp ternyata gampang banget. Admin-nya responsif, langsung bantu pilih ukuran yang pas. Blus Kawung Maroon-nya cantik dan warnanya tidak pudar setelah dicuci berkali-kali. Garansi anti lunturnya terbukti!"</p>
-                    <strong>Siti Rahayu, S.H.</strong>
-                    <span>Notaris — Semarang</span>
-                </div>
-                <div class="testi-card" id="testi-3">
-                    <div class="stars">★★★★★</div>
-                    <p>"Sebagai anak muda yang sering ragu pakai batik karena terkesan kuno, koleksi ACB justru bikin saya percaya diri! Slim fit-nya keren, motifnya unik. Teman-teman pada tanya beli di mana, langsung aku rekomendasiin."</p>
-                    <strong>Rizky Firmansyah</strong>
-                    <span>Content Creator — Bandung</span>
-                </div>
-                <div class="testi-card" id="testi-4">
-                    <div class="stars">★★★★★</div>
-                    <p>"Pesan seragam batik untuk keluarga besar (25 pcs) untuk arisan tahunan. Hasilnya memuaskan! Jahitan rapi, kain premium, dan dikirim tepat waktu. Harga grosirnya sangat kompetitif. Terima kasih ACB!"</p>
-                    <strong>Hj. Fatimah Zahra</strong>
-                    <span>Ketua Arisan — Surabaya</span>
-                </div>
-                <div class="testi-card" id="testi-5">
-                    <div class="stars">★★★★★</div>
-                    <p>"Kain Jlamprang-nya luar biasa! Motifnya rapi dan detail. Saya jahitkan menjadi kebaya dan hasilnya elegan. Pas dipakai ke acara pernikahan banyak yang compliment. Sudah jadi langganan tetap ACB."</p>
-                    <strong>Dewi Kartini</strong>
-                    <span>Desainer Busana — Yogyakarta</span>
-                </div>
-                <div class="testi-card" id="testi-6">
-                    <div class="stars">★★★★★</div>
-                    <p>"Pengiriman ke Medan cepat dan aman. Paketnya dibungkus plastik khusus jadi kainnya tidak lecek. Pelayanan WhatsApp-nya ramah dan sabar menjawab semua pertanyaan. Highly recommended!"</p>
-                    <strong>Ahmad Fauzi</strong>
-                    <span>Pegawai Bank — Medan</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container text-center">
-            <span class="subtitle">KEBERSIHAN KARYA, TANPA KOMPROMI</span>
-            <h2>Mengapa Koleksi Wirda Batik Surakarta Begitu Bernilai?</h2>
-            <p class="features-desc">Kami menolak pencetakan mesin atau tekstil modern. Menjaga muruah warisan budaya leluhur sebagai wastra mahakarya.</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-wrapper"><i class="ph ph-drop"></i></div>
-                    <h3>Pewarna Alam Organik</h3>
-                    <p>Menggunakan kulit kayu jambal, soga, tingi dan mahoni. Menghasilkan warna elegan & tak akan pudar termakan zaman.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper"><i class="ph ph-yarn"></i></div>
-                    <h3>100% Sutra Tenun ATBM</h3>
-                    <p>Ditenun manual dengan Alat Tenun Bukan Mesin. Serat sutra jatuh sempurna di badan, sejuk di iklim tropis.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper"><i class="ph ph-paint-brush"></i></div>
-                    <h3>3-6 Bulan Canting Manual</h3>
-                    <p>Tanpa cap, tanpa sablon, tanpa printing. Goresan canting di dua sisi kain (bolak-balik) malam murni oleh tangan terampil.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrapper"><i class="ph ph-certificate"></i></div>
-                    <h3>Sertifikat & Kotak Jati</h3>
-                    <p>Disertai boks mewah kayu jati murni, nomor registrasi wastra, serta kemasan estetik untuk seserahan / cinderamata.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Catalog Section -->
-    <section class="catalog bg-neutral">
-        <div class="container">
-            <div class="catalog-header">
-                <div>
-                    <span class="subtitle">EKSKLUSIF MAHAS KARYA TERBARU</span>
-                    <h2>Katalog Pilihan</h2>
-                    <p>Setiap motif hanya tersedia 1 kain. Jika tombol WhatsApp aktif, berarti wastra masih tersedia dan Anda bisa langsung memesannya.</p>
-                </div>
-                <div class="catalog-filters">
-                    <button class="filter-btn active">Semua</button>
-                    <button class="filter-btn">Sutra ATBM</button>
-                    <button class="filter-btn">Klasik Tulis</button>
-                    <button class="filter-btn">Kain Lilit</button>
-                </div>
-            </div>
-
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601004455850-7164962c45f9?q=80&w=500&auto=format&fit=crop" alt="Batik">
-                        <span class="badge-tag dark">BEST OFF</span>
-                        <span class="badge-tag gold">Sutra ATBM</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">SIMBOL KEWIBAWAAN</span>
-                        <h3>Kemeja Sutra Parang Barong</h3>
-                        <p>Pewarna soga alam kayu jambal, corak parang besar asli tanpa tumpal.</p>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 5.250.000</span>
-                                <span class="price">Rp 4.450.000</span>
-                            </div>
-                            <span class="status available">Tersedia</span>
-                        </div>
-                        <a href="#" class="btn btn-green btn-full"><i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP</a>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601004455850-7164962c45f9?q=80&w=500&auto=format&fit=crop" alt="Batik">
-                        <span class="badge-tag dark">BEST OFF 2</span>
-                        <span class="badge-tag gold">Prada Emas</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">KEAGUNGAN GELAR JAWA</span>
-                        <h3>Kain Sutra Sekar Jagad</h3>
-                        <p>Perpaduan filosofi pembatik se-nusantara dengan Prada Emas purna.</p>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 6.500.000</span>
-                                <span class="price">Rp 5.950.000</span>
-                            </div>
-                            <span class="status available">Tersedia</span>
-                        </div>
-                        <a href="#" class="btn btn-green btn-full"><i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP</a>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601004455850-7164962c45f9?q=80&w=500&auto=format&fit=crop" alt="Batik">
-                        <span class="badge-tag dark">KLASIK TULIS</span>
-                        <span class="badge-tag gold">Indigo Alam</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">KELUARGA & PERSAUDARAAN</span>
-                        <h3>Kain Pola Ganda Kawung Indigo</h3>
-                        <p>Menggunakan 100% serat katun keraton halus dengan celupan daun nila (indigo).</p>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 2.750.000</span>
-                                <span class="price">Rp 2.250.000</span>
-                            </div>
-                            <span class="status available">Tersedia</span>
-                        </div>
-                        <a href="#" class="btn btn-green btn-full"><i class="ph ph-whatsapp-logo"></i> PESAN VIA WHATSAPP</a>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1601004455850-7164962c45f9?q=80&w=500&auto=format&fit=crop" alt="Batik">
-                        <span class="badge-tag dark">SARIMBIT KERATON</span>
-                        <span class="badge-tag gold">Set Cincin</span>
-                    </div>
-                    <div class="product-info">
-                        <span class="category">CINTA ABADI</span>
-                        <h3>Bespoke Royal Truntum Set</h3>
-                        <p>Pakaian sarimbit (pasangan) sutra ATBM asli lengkap dengan kotak mahar jati.</p>
-                        <div class="price-row">
-                            <div>
-                                <span class="old-price">Rp 12.500.000</span>
-                                <span class="price">Rp 9.900.000</span>
-                            </div>
-                            <span class="status sold">Terjual / PO</span>
-                        </div>
-                        <a href="#" class="btn btn-dark btn-full"><i class="ph ph-whatsapp-logo"></i> PO VIA WHATSAPP</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Custom Motif Banner -->
-            <div class="custom-banner">
-                <div class="banner-content">
-                    <div class="icon-circle"><i class="ph ph-scissors"></i></div>
-                    <div>
-                        <h3>Menginginkan Motif Khusus atau Seragam Keluarga?</h3>
-                        <p>Kami melayani pembuatan motif kustom eksklusif. Hubungi Kurator Pribadi kami untuk konsultasi desain, warna & jenis kain.</p>
-                    </div>
-                </div>
-                <a href="#" class="btn btn-gold">HUBUNGI KURATOR PRIBADI</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- How to order section -->
-    <section class="how-to">
-        <div class="container text-center">
-            <span class="subtitle">PENGALAMAN BELANJA EKSKLUSIF</span>
-            <h2>4 Langkah Mudah Meminang Wastra via WhatsApp</h2>
-            <p class="features-desc">Belanja kain mahakarya tanpa kerumitan checkout otomatis. Anda dilayani langsung oleh Kurator Pribadi layaknya berkunjung ke Griya Art Galeri di Surakarta.</p>
-            
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="icon-wrapper"><i class="ph ph-eye"></i></div>
-                    <h3>Pilih Motif & Koleksi</h3>
-                    <p>Jelajahi pilihan kain atau busana dari galeri web kami. Temukan 'Kecocokan' yang selaras dengan doa dan kepribadian Anda.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="icon-wrapper"><i class="ph ph-whatsapp-logo"></i></div>
-                    <h3>Klik Tombol WhatsApp</h3>
-                    <p>Cukup klik tombol "Pesan via WhatsApp". Nama kain, kode produk, dan estimasi harga otomatis terisi di chat layar Anda.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="icon-wrapper"><i class="ph ph-video-camera"></i></div>
-                    <h3>Video 4K & Konsultasi Fitting</h3>
-                    <p>Kurator kami mengirimkan video resolusi standar tinggi kain, panduan pengukuran postur tubuh, dan konsultasi kombinasi warna-warni.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <div class="icon-wrapper"><i class="ph ph-truck"></i></div>
-                    <h3>Kirim Kotak Jati Monumental</h3>
-                    <p>Pembayaran via rekening resmi perusahaan. Kain dikemas mantap dalam kotak kayu jati ukir, dan dikirim aman ke alamat Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quote & Philosophy Section -->
-    <section class="philosophy container">
-        <div class="philosophy-grid">
-            <div class="quote-card bg-primary text-white">
-                <blockquote>"Membatik itu laku prihatin dan meditasi rasa. Tiap tetesan malam panas di atas sutra adalah lantunan doa keselamatan bagi yang mengenakannya."</blockquote>
-                <div class="author">
-                    <div class="avatar">EB</div>
-                    <div>
-                        <strong>Eyang Purbosari</strong>
-                        <span>Maestro Pembatik Laweyan (Turun Temurun)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="philosophy-content">
-                <span class="subtitle">MELESTARIKAN NAFAS LELUHUR</span>
-                <h2>Setiap Helai Mendukung Kemandirian 84 Pembatik Tradisional</h2>
-                <p>Wirda Batik memberdayakan perajin canting tradisional di Laweyan & Kauman Surakarta. Kami menjaga ekosistem rukun dari serangan maraknya kain motif cetak mesin (printing) yang merusak nilai seni wastra.</p>
-                <p>Dengan meminang karya kami, Anda bukan sekadar membeli pakaian, tetapi mengambil amanah budaya hidup, dan memberikan upah adil yang memuliakan karya murni ciptaan tangan manusia.</p>
-                <a href="#" class="link-btn">KENAL LEBIH DEKAT TENTANG GERAKAN KAMI <i class="ph ph-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials bg-neutral">
-        <div class="container">
-            <div class="text-center">
-                <span class="subtitle">APRESIASI KOLEKTOR & PEJABAT</span>
-                <h2>Dipercaya di Panggung Kehormatan</h2>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Pelayanannya WhatsApp sangat memuaskan dan detail. Dikirimi video detail saat di-matching warna dengan kebaya saya. Box jatinya luar biasa mewah untuk koleksi simpanan. Sukses terus."</p>
-                    <strong>Bambang Haryadi, S.H.</strong>
-                    <span>Kolektor Wastra & Komisaris BUMN - Jakarta</span>
-                </div>
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Sutra ATBM-nya halus sekali, luwes, dan dingin. Motifnya otentik, beda dengan yang pasaran di mall. Terasa sekali aura karisma kalau dipakai untuk rapat dinas."</p>
-                    <strong>dr. Budi Wardhani, Sp.A.</strong>
-                    <span>Surabaya</span>
-                </div>
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Membeli dari luar pulau tapi dikirim dengan asuransi & tracking jelas. Kotak kayunya sangat aman. Kainnya sempurna, wangi daun salam/rempahnya terasa."</p>
-                    <strong>Aditya & Maya</strong>
-                    <span>Denpasar</span>
+                <div class="about-social-pills">
+                    <a href="https://shopee.co.id/" target="_blank" rel="noopener" class="social-pill pill-shopee">
+                        <svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z"/></svg> Shopee
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="social-pill pill-tiktok">
+                        <svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.242V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002-.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.853 4.853 0 0 1-1.003-.104z"/></svg> TikTok
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-pill pill-ig">
+                        <svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram
+                    </a>
+                    <a href="https://wa.me/6287726984278?text=Halo%2C%20saya%20ingin%20mengenal%20lebih%20jauh%20Anwar%20Cahaya%20Batik%20dan%20koleksi%20yang%20tersedia." target="_blank" rel="noopener" class="social-pill pill-wa" id="about-wa-btn">
+                        <svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.293.38 2.53 1.102 3.568l-1.171 4.279 4.385-1.151c1.002.568 2.155.867 3.329.866 3.181 0 5.768-2.587 5.768-5.766.001-3.187-2.575-5.77-5.752-5.774zm3.903 8.355c-.168.472-.979.878-1.349.933-.355.053-.811.077-1.312-.085-.303-.097-.692-.224-1.186-.436-2.083-.902-3.447-3.021-3.551-3.161-.103-.141-.845-1.125-.845-2.148 0-1.023.535-1.527.725-1.735.19-.208.414-.26.552-.26.138 0 .275.002.395.008.127.006.297-.048.463.345.168.397.575 1.403.626 1.506.051.103.086.223.017.362-.069.139-.103.226-.205.345-.102.119-.214.265-.306.356-.103.102-.211.213-.091.417.12.204.532.879 1.143 1.422.787.7 1.451.918 1.655 1.021.204.103.323.086.444-.051.121-.137.521-.607.66-.816.138-.208.275-.174.463-.103.187.07 1.191.562 1.396.664.205.103.343.155.394.24.051.085.051.498-.117.97zM12 0C5.373 0 0 5.373 0 12c0 2.118.553 4.137 1.605 5.903L.044 23.956l6.238-1.638C7.994 23.284 9.957 23.8 12 23.8c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg> WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -741,10 +502,10 @@
                 <p class="brand-tagline">Batik Asli Sragen</p>
                 <p class="brand-desc">Menghadirkan keindahan motif batik Sragen yang kaya makna ke dalam busana modern Anda. Premium, terjangkau, dan terpercaya sejak generasi ketiga.</p>
                 <div class="social-links">
-                    <a href="#" id="ig-link" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-                    <a href="#" id="fb-link" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-                    <a href="#" id="tiktok-link" aria-label="TikTok"><i class="ph ph-tiktok-logo"></i></a>
-                    <a href="https://wa.me/6287726984278" id="footer-wa-link" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i></a>
+                    <a href="https://shopee.co.id/" id="shopee-link" aria-label="Shopee" target="_blank" rel="noopener"><svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.9414 17.9633c.229-1.879-.981-3.077-4.1758-4.0969-1.548-.528-2.277-1.22-2.26-2.1719.065-1.056 1.048-1.825 2.352-1.85a5.2898 5.2898 0 0 1 2.8838.89c.116.072.197.06.263-.039.09-.145.315-.494.39-.62.051-.081.061-.187-.068-.281-.185-.1369-.704-.4149-.983-.5319a6.4697 6.4697 0 0 0-2.5118-.514c-1.909.008-3.4129 1.215-3.5389 2.826-.082 1.1629.494 2.1078 1.73 2.8278.262.152 1.6799.716 2.2438.892 1.774.552 2.695 1.5419 2.478 2.6969-.197 1.047-1.299 1.7239-2.818 1.7439-1.2039-.046-2.2878-.537-3.1278-1.19l-.141-.11c-.104-.08-.218-.075-.287.03-.05.077-.376.547-.458.67-.077.108-.035.168.045.234.35.293.817.613 1.134.775a6.7097 6.7097 0 0 0 2.8289.727 4.9048 4.9048 0 0 0 2.0759-.354c1.095-.465 1.8029-1.394 1.9449-2.554zM11.9986 1.4009c-2.068 0-3.7539 1.95-3.8329 4.3899h7.6657c-.08-2.44-1.765-4.3899-3.8328-4.3899zm7.8516 22.5981-.08.001-15.7843-.002c-1.074-.04-1.863-.91-1.971-1.991l-.01-.195L1.298 6.2858a.459.459 0 0 1 .45-.494h4.9748C6.8448 2.568 9.1607 0 11.9996 0c2.8388 0 5.1537 2.5689 5.2757 5.7898h4.9678a.459.459 0 0 1 .458.483l-.773 15.5883-.007.131c-.094 1.094-.979 1.9769-2.0709 2.0059z"/></svg></a>
+                    <a href="https://www.instagram.com/" id="ig-link" aria-label="Instagram" target="_blank" rel="noopener"><svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://www.tiktok.com/" id="tiktok-link" aria-label="TikTok" target="_blank" rel="noopener"><svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.242V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002-.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.853 4.853 0 0 1-1.003-.104z"/></svg></a>
+                    <a href="https://wa.me/6287726984278" id="footer-wa-link" aria-label="WhatsApp" target="_blank" rel="noopener"><svg class="brand-svg-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.293.38 2.53 1.102 3.568l-1.171 4.279 4.385-1.151c1.002.568 2.155.867 3.329.866 3.181 0 5.768-2.587 5.768-5.766.001-3.187-2.575-5.77-5.752-5.774zm3.903 8.355c-.168.472-.979.878-1.349.933-.355.053-.811.077-1.312-.085-.303-.097-.692-.224-1.186-.436-2.083-.902-3.447-3.021-3.551-3.161-.103-.141-.845-1.125-.845-2.148 0-1.023.535-1.527.725-1.735.19-.208.414-.26.552-.26.138 0 .275.002.395.008.127.006.297-.048.463.345.168.397.575 1.403.626 1.506.051.103.086.223.017.362-.069.139-.103.226-.205.345-.102.119-.214.265-.306.356-.103.102-.211.213-.091.417.12.204.532.879 1.143 1.422.787.7 1.451.918 1.655 1.021.204.103.323.086.444-.051.121-.137.521-.607.66-.816.138-.208.275-.174.463-.103.187.07 1.191.562 1.396.664.205.103.343.155.394.24.051.085.051.498-.117.97zM12 0C5.373 0 0 5.373 0 12c0 2.118.553 4.137 1.605 5.903L.044 23.956l6.238-1.638C7.994 23.284 9.957 23.8 12 23.8c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -756,11 +517,10 @@
             <div class="footer-col">
                 <h4>NAVIGASI</h4>
                 <ul class="footer-links">
-                    <li><a href="#koleksi"><i class="ph ph-caret-right"></i> Lihat Koleksi</a></li>
                     <li><a href="#keunggulan"><i class="ph ph-caret-right"></i> Keunggulan Kami</a></li>
-                    <li><a href="#cara-belanja"><i class="ph ph-caret-right"></i> Cara Belanja</a></li>
+                    <li><a href="#koleksi"><i class="ph ph-caret-right"></i> Katalog</a></li>
+                    <li><a href="#cara-belanja"><i class="ph ph-caret-right"></i> Toko &amp; Sosmed</a></li>
                     <li><a href="#tentang-kami"><i class="ph ph-caret-right"></i> Tentang Kami</a></li>
-                    <li><a href="#testimoni"><i class="ph ph-caret-right"></i> Testimoni</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -786,6 +546,119 @@
         <i class="ph ph-whatsapp-logo"></i>
         <span>Chat WA</span>
     </a>
+
+    <!-- ===== PRODUCT DETAIL MODAL ===== -->
+    <div class="product-modal-overlay" id="productModal" aria-hidden="true">
+        <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Tutup Detail Produk">
+                <i class="ph ph-x"></i>
+            </button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <div class="modal-image-wrap">
+                        <img src="" alt="" id="modalImg">
+                        <span class="badge-tag dark" id="modalBadgeDark"></span>
+                        <span class="badge-tag gold" id="modalBadgeGold"></span>
+                    </div>
+                    <div class="modal-thumbs" id="modalThumbs" style="display: none;">
+                        <button type="button" class="modal-thumb-btn active" id="thumbFrontBtn">
+                            <img src="" alt="Tampak Depan" id="thumbFrontImg">
+                            <span>Tampak Depan</span>
+                        </button>
+                        <button type="button" class="modal-thumb-btn" id="thumbBackBtn">
+                            <img src="" alt="Tampak Belakang" id="thumbBackImg">
+                            <span>Tampak Belakang</span>
+                        </button>
+                    </div>
+                    <div class="modal-guarantees">
+                        <span><i class="ph ph-shield-check"></i> Garansi Anti Luntur</span>
+                        <span><i class="ph ph-seal-check"></i> 100% Asli Sragen</span>
+                        <span><i class="ph ph-truck"></i> Pengiriman Aman</span>
+                    </div>
+                </div>
+                <div class="modal-info-col">
+                    <div class="modal-meta-top">
+                        <span class="category" id="modalCategory"></span>
+                        <span class="modal-code" id="modalCode"></span>
+                    </div>
+                    <h3 id="modalTitle"></h3>
+                    <div class="modal-price-box">
+                        <div>
+                            <span class="old-price" id="modalOldPrice"></span>
+                            <span class="price" id="modalPrice"></span>
+                        </div>
+                        <span class="status available" id="modalStatus"></span>
+                    </div>
+                    <p class="modal-desc" id="modalDesc"></p>
+                    <div class="product-specs" id="modalSpecs"></div>
+
+                    <!-- Pilihan Ukuran (Untuk Kemeja & Blus) -->
+                    <div class="modal-option-group" id="modalSizeSection">
+                        <div class="option-header">
+                            <label>Pilih Ukuran:</label>
+                            <button type="button" class="size-guide-toggle" id="sizeGuideToggle">
+                                <i class="ph ph-ruler"></i> Panduan Ukuran
+                            </button>
+                        </div>
+                        <div class="size-selector" id="sizeSelector">
+                            <button type="button" class="size-btn" data-size="M">M</button>
+                            <button type="button" class="size-btn active" data-size="L">L</button>
+                            <button type="button" class="size-btn" data-size="XL">XL</button>
+                            <button type="button" class="size-btn" data-size="XXL">XXL</button>
+                        </div>
+                        <!-- Tabel Panduan Ukuran -->
+                        <div class="size-chart-box" id="sizeChartBox">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ukuran</th>
+                                        <th>Lingkar Dada</th>
+                                        <th>Panjang Baju</th>
+                                        <th>Rekomendasi BB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><strong>M</strong></td><td>104 cm</td><td>70 cm</td><td>50–62 kg</td></tr>
+                                    <tr><td><strong>L</strong></td><td>108 cm</td><td>72 cm</td><td>63–72 kg</td></tr>
+                                    <tr><td><strong>XL</strong></td><td>112 cm</td><td>74 cm</td><td>73–82 kg</td></tr>
+                                    <tr><td><strong>XXL</strong></td><td>116 cm</td><td>76 cm</td><td>83–95 kg</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Info Dimensi Kain (Untuk Kategori Kain) -->
+                    <div class="modal-option-group" id="modalFabricSection" style="display: none;">
+                        <label>Dimensi &amp; Penggunaan Kain:</label>
+                        <div class="fabric-info-note">
+                            <i class="ph ph-info"></i>
+                            <span>Ukuran kain leluasa untuk dijahit menjadi 1 kemeja lengan panjang (hingga XXL), blus/tunik, maupun kain bawahan/lilit.</span>
+                        </div>
+                    </div>
+
+                    <!-- Jumlah Pesanan & Estimasi Total -->
+                    <div class="modal-qty-row">
+                        <div class="qty-control-wrap">
+                            <label>Jumlah:</label>
+                            <div class="qty-controls">
+                                <button type="button" class="qty-btn" id="qtyMinus" aria-label="Kurangi jumlah">−</button>
+                                <input type="number" id="qtyInput" value="1" min="1" max="50" readonly>
+                                <button type="button" class="qty-btn" id="qtyPlus" aria-label="Tambah jumlah">+</button>
+                            </div>
+                        </div>
+                        <div class="subtotal-wrap">
+                            <span>Estimasi Total</span>
+                            <strong id="modalSubtotal">Rp 0</strong>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-green btn-full modal-wa-btn" id="modalWaBtn" target="_blank" rel="noopener">
+                        <i class="ph ph-whatsapp-logo"></i> PESAN SEKARANG VIA WHATSAPP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
