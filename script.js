@@ -222,6 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title: '',
         code: '',
         categoryType: '',
+        basePrice: 0,
         unitPrice: 0,
         priceText: '',
         selectedSize: 'L',
@@ -233,7 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateModalOrderLink = () => {
-        const total = currentProduct.unitPrice * currentProduct.qty;
+        // Ukuran XL dan XXL langsung ditambah harga 10.000
+        const isSurcharged = currentProduct.categoryType !== 'kain' && (currentProduct.selectedSize === 'XL' || currentProduct.selectedSize === 'XXL');
+        const unitPrice = currentProduct.basePrice + (isSurcharged ? 10000 : 0);
+        const total = unitPrice * currentProduct.qty;
+
+        modalPrice.textContent = formatRupiah(unitPrice);
         modalSubtotal.textContent = formatRupiah(total);
 
         const sizeInfo = currentProduct.categoryType === 'kain'
@@ -244,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `• Produk: *${currentProduct.title}*\n` +
             (currentProduct.code ? `• Kode: ${currentProduct.code}\n` : '') +
             `• Pilihan: ${sizeInfo}\n` +
+            `• Harga Satuan: ${formatRupiah(unitPrice)}\n` +
             `• Jumlah: ${currentProduct.qty} pcs\n` +
             `• Estimasi Total: *${formatRupiah(total)}*\n\n` +
             `Mohon info ketersediaan stok dan cara pembayarannya. Terima kasih! 🙏`;
@@ -300,6 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 title: titleEl ? titleEl.textContent.trim() : '',
                 code: codeMatch,
                 categoryType: card.dataset.category || '',
+                basePrice: rawPrice,
                 unitPrice: rawPrice,
                 priceText: priceEl ? priceEl.textContent.trim() : '',
                 selectedSize: 'L',
