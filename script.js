@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let visibleInFilter = 0;
 
         productCards.forEach(card => {
-            const category = card.dataset.category;
-            const matches = (activeFilter === 'semua' || category === activeFilter);
+            const category = card.dataset.category || '';
+            const matches = (activeFilter === 'semua' || activeFilter === 'all' || category.includes(activeFilter));
 
             if (matches) {
                 visibleInFilter++;
-                if (activeFilter === 'semua' && !isShowingAllProducts && visibleInFilter > INITIAL_VISIBLE_COUNT) {
+                if ((activeFilter === 'semua' || activeFilter === 'all') && !isShowingAllProducts && visibleInFilter > INITIAL_VISIBLE_COUNT) {
                     card.style.display = 'none';
                 } else {
                     card.style.display = 'flex';
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (catalogMoreWrap && toggleMoreProducts) {
             const extraCount = productCards.length - INITIAL_VISIBLE_COUNT;
-            if (activeFilter === 'semua' && extraCount > 0) {
+            if ((activeFilter === 'semua' || activeFilter === 'all') && extraCount > 0) {
                 catalogMoreWrap.style.display = 'flex';
                 const spanEl = toggleMoreProducts.querySelector('span');
                 const iconEl = toggleMoreProducts.querySelector('i');
@@ -217,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const qtyInput = document.getElementById('qtyInput');
     const modalSubtotal = document.getElementById('modalSubtotal');
     const modalWaBtn = document.getElementById('modalWaBtn');
+    const modalShopeeBtn = document.getElementById('modalShopeeBtn');
 
     let currentProduct = {
         title: '',
@@ -226,7 +227,8 @@ document.addEventListener('DOMContentLoaded', () => {
         unitPrice: 0,
         priceText: '',
         selectedSize: 'L',
-        qty: 1
+        qty: 1,
+        shopeeUrl: 'https://shopee.co.id/anwarcahayabatik'
     };
 
     const formatRupiah = (num) => {
@@ -295,13 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const waLinkEl = card.querySelector('a.btn');
 
             const rawPrice = priceEl ? parseInt(priceEl.textContent.replace(/[^0-9]/g, ''), 10) || 0 : 0;
-            let codeMatch = '';
-            if (waLinkEl && waLinkEl.href) {
-                const decoded = decodeURIComponent(waLinkEl.href);
-                const m = decoded.match(/Kode:\s*([A-Z0-9-]+)/i);
-                if (m) codeMatch = m[1];
-            }
-            if (!codeMatch) codeMatch = `ACB-00${index + 1}`;
+            const codeMatch = card.dataset.code || `ACB-00${index + 1}`;
 
             currentProduct = {
                 title: titleEl ? titleEl.textContent.trim() : '',
@@ -311,8 +307,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 unitPrice: rawPrice,
                 priceText: priceEl ? priceEl.textContent.trim() : '',
                 selectedSize: 'L',
-                qty: 1
+                qty: 1,
+                shopeeUrl: card.dataset.shopeeUrl || 'https://shopee.co.id/anwarcahayabatik'
             };
+
+            if (modalShopeeBtn) {
+                modalShopeeBtn.href = currentProduct.shopeeUrl;
+            }
 
             // Populate modal DOM
             if (imgEl) {
